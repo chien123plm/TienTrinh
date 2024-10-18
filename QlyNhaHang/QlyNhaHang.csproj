@@ -262,6 +262,9 @@
     <Content Include="Views\Admin\QuanLi.cshtml" />
     <Content Include="Views\Admin\QuanLiDatBan.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\QuanLiKho.cshtml" />
+    <Content Include="Views\Admin\QuanLiNhanVien.cshtml" />
+    <Content Include="Views\Admin\QuanLiCaLam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
