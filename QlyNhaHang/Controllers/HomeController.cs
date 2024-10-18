@@ -34,5 +34,10 @@ namespace QlyNhaHang.Controllers
         {
             return View();
         }
+
+        public ActionResult Profile()
+        {
+            return View();
+        }
     }
 }
