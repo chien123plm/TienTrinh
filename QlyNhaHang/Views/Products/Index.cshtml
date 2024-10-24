@@ -1,0 +1,61 @@
+﻿@model IEnumerable<QlyNhaHang.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Home", "ProductList","Products")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Món ăn
+        </th>
+        <th>
+           Mô tả món ăn
+        </th>
+        <th>
+           Giá
+        </th>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Loại    
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NamePro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DecriptionPro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <img src="~/Public/image/@item.ImagePro"  width="60"/>
+            <br/>
+            @Html.DisplayFor(modelItem => item.ImagePro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.NameCate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductID })
+        </td>
+    </tr>
+}
+
+</table>
