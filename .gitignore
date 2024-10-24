@@ -1,0 +1,7 @@
+.vs/
+*.zip
+*.png
+QlyNhaHang/Admin/
+QlyNhaHang/Public/image/
+QlyNhaHang/Views/Products/
+packages/EntityFramework.6.4.4/

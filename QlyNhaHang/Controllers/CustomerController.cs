@@ -9,7 +9,7 @@ namespace QlyNhaHang.Controllers
 {
     public class CustomerController : Controller
     {
-        DienThoaiEntities1 db=new DienThoaiEntities1 ();
+        DienThoaiEntities2 db=new DienThoaiEntities2 ();
         // GET: Customer
         public ActionResult DanhSachKhachHang()
         {

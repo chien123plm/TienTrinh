@@ -13,10 +13,10 @@ namespace QlyNhaHang.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DienThoaiEntities1 : DbContext
+    public partial class DienThoaiEntities2 : DbContext
     {
-        public DienThoaiEntities1()
-            : base("name=DienThoaiEntities1")
+        public DienThoaiEntities2()
+            : base("name=DienThoaiEntities2")
         {
         }
     
