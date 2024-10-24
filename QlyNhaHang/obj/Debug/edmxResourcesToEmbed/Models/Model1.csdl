@@ -113,7 +113,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DienThoaiEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DienThoaiEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AdminUser" EntityType="Self.AdminUser" />
     <EntitySet Name="Category" EntityType="Self.Category" />
     <EntitySet Name="Customer" EntityType="Self.Customer" />

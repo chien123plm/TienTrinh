@@ -252,7 +252,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DienThoaiEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DienThoaiEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AdminUser" EntityType="Self.AdminUser" />
           <EntitySet Name="Category" EntityType="Self.Category" />
           <EntitySet Name="Customer" EntityType="Self.Customer" />
@@ -281,7 +281,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DienThoaiModelStoreContainer" CdmEntityContainer="DienThoaiEntities1">
+        <EntityContainerMapping StorageEntityContainer="DienThoaiModelStoreContainer" CdmEntityContainer="DienThoaiEntities2">
           <EntitySetMapping Name="AdminUser">
             <EntityTypeMapping TypeName="DienThoaiModel.AdminUser">
               <MappingFragment StoreEntitySet="AdminUser">
