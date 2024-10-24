@@ -1,8 +1,65 @@
-﻿
+﻿@*@model  gọi dữ liệu của nhóm mình*@
 @{
     ViewBag.Title = "QuanLiDatBan";
-    Layout = "~/Views/Shared/Login.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
-<h2>QuanLiDatBan</h2>
-
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Admin</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="">Dashboard</a></li>
+        <li class="breadcrumb-item active">Quản lí đặt bàn</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-body">
+            Dữ liệu này chỉ có admin chỉnh sửa
+            <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+            .
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            QUẢN LÍ ĐẶT BÀN
+            <div class="d-flex justify-content-end">
+                <a href="" class="btn btn-primary btn btn-primary btn-lg">Đặt bàn</a>
+                <a href="" class="btn btn-success btn btn-primary btn-lg">Sửa bàn</a>
+                <a href="" class="btn btn-danger">Hủy bàn</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>Tên bàn</th>
+                        <th>Mã đặt chỗ</th>
+                        <th>Mã khách hàng</th>
+                        
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Tên bàn</th>
+                        <th>Mã đặt chỗ</th>
+                        <th>Họ tên</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @*@foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(Model.IndexOf(item)+1)</td>
+                            <td>@item.FirstName</td>
+                            <td>@item.LastName</td>
+                            <td>@item.EmailId, @Item</td>
+                            <td>@item.Password</td>
+                            <td>
+                                @Html.ActionLink("Edit Member", "MemberEdit", new { memberId = item.MemberId }, new { @class = "btn btn-success" })
+                                @Html.ActionLink("Delete Member", "MemberDelete", "Admin", new { memberId = item.MemberId }, new { @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                    }*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

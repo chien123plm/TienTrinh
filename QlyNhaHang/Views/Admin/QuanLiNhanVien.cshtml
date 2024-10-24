@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "QuanLiNhanVien";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Admin</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="">Dashboard</a></li>
+        <li class="breadcrumb-item active">Quản lí nhân viên</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-body">
+            Dữ liệu này chỉ có admin chỉnh sửa
+            <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+            .
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            QUẢN LÍ NHÂN VIÊN
+            <div class="d-flex justify-content-end">
+                <a href="" class="btn btn-primary btn btn-primary btn-lg">Thêm nhân viên</a>
+                <a href="" class="btn btn-success btn btn-primary btn-lg">Sửa nhân viên</a>
+                <a href="" class="btn btn-danger">Hủy nhân viên</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="datatablesSimple">
+                <thead>
+                    <tr>
+                        <th>Mã nhân viên</th>
+                        <th>Tên nhân viên</th>
+                        <th>Gmail</th>
+                        <th>Số điện thoại</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Mã nhân viên</th>
+                        <th>Tên nhân viên</th>
+                        <th>Gmail</th>
+                        <th>Số điện thoại</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @*@foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@(Model.IndexOf(item)+1)</td>
+                                <td>@item.FirstName</td>
+                                <td>@item.LastName</td>
+                                <td>@item.EmailId, @Item</td>
+                                <td>@item.Password</td>
+                                <td>
+                                    @Html.ActionLink("Edit Member", "MemberEdit", new { memberId = item.MemberId }, new { @class = "btn btn-success" })
+                                    @Html.ActionLink("Delete Member", "MemberDelete", "Admin", new { memberId = item.MemberId }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
